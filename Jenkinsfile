@@ -33,7 +33,7 @@ pipeline {
             steps {
                 echo "3.Push Docker Image Stage"
                 sh 'docker login harbor.edu.cn -u nju14 -p nju142022'
-                sh "docker push harbor.edu.cn/nju03/cloud-native-project:${BUILD_ID}"
+                sh "docker push harbor.edu.cn/nju03/cloud-native-final:${BUILD_ID}"
             }
         }
 
